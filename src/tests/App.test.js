@@ -35,4 +35,16 @@ describe('se o topo da aplicação contém um conjunto fixo de links de navegaç
       const { pathname } = history.location;
       expect(pathname).toBe('/favorites');
     });
+  test('se é redirecionada para página "Not Found" ao entrar em uma URL Desconhecida',
+    () => {
+      const { history } = renderWithRouter(<App />);
+
+      history.push('/pagina-que-nao-existe');
+      const notFound = screen.getByRole(
+        'heading',
+        { level: 2 },
+        { name: 'Page requested not found' },
+      );
+      expect(notFound).toBeInTheDocument();
+    });
 });
