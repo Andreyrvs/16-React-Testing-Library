@@ -15,4 +15,14 @@ describe('se o topo da aplicação contém um conjunto fixo de links de navegaç
       const { pathname } = history.location;
       expect(pathname).toBe('/');
     });
+  test('O 2° link possui o texto "About" e se a página é redirecionado para "/about"',
+    () => {
+      const { history } = renderWithRouter(<App />);
+      const linkAbout = screen.getByRole('link', { name: 'About' });
+      expect(linkAbout).toBeInTheDocument();
+
+      userEvent.click(linkAbout);
+      const { pathname } = history.location;
+      expect(pathname).toBe('/about');
+    });
 });
