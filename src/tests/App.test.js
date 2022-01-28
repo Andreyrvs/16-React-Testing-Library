@@ -25,4 +25,14 @@ describe('se o topo da aplicação contém um conjunto fixo de links de navegaç
       const { pathname } = history.location;
       expect(pathname).toBe('/about');
     });
+  test('O 3° link possui o texto "About" e se a página é redirecionado para "/favorites"',
+    () => {
+      const { history } = renderWithRouter(<App />);
+      const linkFavorites = screen.getByRole('link', { name: 'Favorite Pokémons' });
+      expect(linkFavorites).toBeInTheDocument();
+
+      userEvent.click(linkFavorites);
+      const { pathname } = history.location;
+      expect(pathname).toBe('/favorites');
+    });
 });
