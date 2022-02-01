@@ -20,9 +20,12 @@ describe('Teste se a página contém as informações sobre a Pokédex.', () => 
   test('se a página contém dois parágrafos com texto sobre a Pokédex',
     () => {
       renderWithRouter(<About />);
-
-      const firstParagraph = screen.getByText(/This application simulates a Pokédex, a digital encyclopedia containing all Pokémons/i);
-      const secondParagraph = screen.getByText(/One can filter Pokémons by type, and see more details for each one of them/i);
+      const firstParagraph = screen.getByText(
+        /This application simulates a Pokédex,/i,
+      );
+      const secondParagraph = screen.getByText(
+        /One can filter Pokémons by type, and see more details for each one of them/i,
+      );
       expect(firstParagraph).toBeInTheDocument();
       expect(secondParagraph).toBeInTheDocument();
     });
