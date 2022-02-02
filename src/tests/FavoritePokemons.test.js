@@ -5,15 +5,16 @@ import App from '../App';
 import renderWithRouter from './RenderWithRouter';
 
 describe('Testa se tem ou não Pokemons favoritos', () => {
+  const routeFavorites = '/favorites';
   test(`se é exibido na tela a msg "No favorite pokemon found",
   se não tiver pokemon favorito`, () => {
     const { history } = renderWithRouter(<App />);
     history.push('/');
     const linkFavorite = screen.getByRole('link', { name: /favorite pokémons/i });
-    expect(linkFavorite).toHaveAttribute('href', '/favorites');
+    expect(linkFavorite).toHaveAttribute('href', routeFavorites);
     expect(linkFavorite).toBeInTheDocument();
     userEvent.click(linkFavorite);
-    history.push('/favorites');
+    history.push(routeFavorites);
 
     const notFoundMsg = screen.getByText(/No favorite pokemon found/i);
     expect(notFoundMsg).toBeInTheDocument();
@@ -24,10 +25,10 @@ describe('Testa se tem ou não Pokemons favoritos', () => {
 
     history.push('/');
     const linkFavorite = screen.getByRole('link', { name: /favorite pokémons/i });
-    expect(linkFavorite).toHaveAttribute('href', '/favorites');
+    expect(linkFavorite).toHaveAttribute('href', routeFavorites);
     expect(linkFavorite).toBeInTheDocument();
     userEvent.click(linkFavorite);
-    history.push('/favorites');
+    history.push(routeFavorites);
 
     const notFoundMsg = screen.getByText(/No favorite pokemon found/i);
     expect(notFoundMsg).toBeInTheDocument();
