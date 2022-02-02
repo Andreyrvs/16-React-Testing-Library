@@ -44,7 +44,9 @@ describe('Testa se tem ou não Pokemons favoritos', () => {
     userEvent.click(linkMoreDetails);
     history.push('/pokemons/25');
 
-    const checkboxFavorite = screen.getByRole('checkbox', { name: /pokémon favoritado\?/i });
+    const checkboxFavorite = screen.getByRole(
+      'checkbox', { name: /pokémon favoritado\?/i },
+    );
     expect(checkboxFavorite).toBeInTheDocument();
 
     userEvent.click(checkboxFavorite);
