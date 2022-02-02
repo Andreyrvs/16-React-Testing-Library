@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import App from '../App';
 import renderWithRouter from './RenderWithRouter';
 
-describe('Testa se tem ou não Pokemons favoritos', () => {
+describe('Teste o componente <FavoritePokemons.js />', () => {
   const routeFavorites = '/favorites';
   test(`se é exibido na tela a msg "No favorite pokemon found",
   se não tiver pokemon favorito`, () => {
