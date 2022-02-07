@@ -5,7 +5,6 @@ import App from '../App';
 import renderWithRouter from './RenderWithRouter';
 
 describe('Teste o componente <Pokemon.js />', () => {
-  fail('incompleto');
   describe('Teste Se é renderizado um card com as informações de determinado pokémon.',
     () => {
       test('O nome correto do Pokémon deve ser mostrado na tela', () => {
