@@ -18,7 +18,7 @@ describe('Teste o componente <Pokemon.js />', () => {
         const pokemonType = screen.getByTestId('pokemon-type');
         expect(pokemonType).toBeInTheDocument();
       });
-      test('should first', () => {
+      test('O peso médio do pokémon deve ser exibido ', () => {
         renderWithRouter(<App />);
         const pokemonAverage = screen.getByTestId('pokemon-weight');
         expect(pokemonAverage).toHaveValue('6.0');

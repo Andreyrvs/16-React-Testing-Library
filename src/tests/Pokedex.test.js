@@ -147,8 +147,8 @@ describe('Teste o componente <Pokedex.js />', () => {
     const dragonair = screen.getByText(/dragonair/i);
     expect(dragonair).toBeInTheDocument();
     expect(btnNextPokemon).toBeDisabled();
-    const typeDragon = screen.getAllByText(/Dragon/i);
-    expect(typeDragon).toHaveLength(3);
+    const typeDragon = screen.getAllByText('Dragon');
+    expect(typeDragon).toHaveLength(2);
 
     const btnAll = screen.getByRole('button', { name: /all/i });
     userEvent.click(btnAll);
@@ -202,5 +202,11 @@ describe('Teste o componente <Pokedex.js />', () => {
     userEvent.click(btnNextPokemon);
     const nextPokemonPikachu = screen.getByText(/Pikachu/i);
     expect(nextPokemonPikachu).toBeInTheDocument();
+
+    history.push('/');
+    const pikachu = screen.getByText(/pikachu/i);
+    expect(btnAll).toBeInTheDocument();
+    expect(pikachu).toBeInTheDocument();
+    expect(btnNextPokemon).not.toBeDisabled();
   });
 });
