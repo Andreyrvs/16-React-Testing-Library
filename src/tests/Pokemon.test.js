@@ -59,6 +59,7 @@ describe('Teste o componente <Pokemon.js />', () => {
         const labelStar = screen.getByRole('img', {
           name: /Pikachu is marked as favorite/i });
         expect(labelStar).toBeInTheDocument();
+        expect(labelStar.src).toBe('http://localhost/star-icon.svg');
       });
     });
 });
