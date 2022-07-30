@@ -1,16 +1,36 @@
-# 🚧 README em construção 🚧
+# React Testes
 
-<!-- Olá, Tryber!
+> Eu desenvolvi os arquivos que estão em `src/tests` e `README.md`
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+* Todos arquivos exeto os citados acima foram desenvolvidos pela [Trybe](https://www.betrybe.com/).
 
-É essencial que você preencha esse documento por conta própria, ok?
+## Contexto
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
+Este projeto testa uma aplicaçåo de pokedex
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+## Técnologias usadas
 
--->
+Front-end:
+> Desenvolvido usando: React Testing Library
+
+## Instalando Dependências
+
+* clone o repositório:
+
+  ```bash
+    git clone git@github.com:Andreyrvs/react-testing-library.git
+  ```
+
+> Frontend
+
+```bash
+npm install
+```
+
+## Executando Testes
+
+* Para rodar todos os testes:
+
+  ```bash
+    npm test
+  ```
