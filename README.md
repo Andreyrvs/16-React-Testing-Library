@@ -34,3 +34,13 @@ npm install
   ```bash
     npm test
   ```
+
+* Para rodar todos os testes de linter:
+
+  ```bash
+    npm run lint
+  ```
+
+  ```bash
+    npm run lint:styles
+  ```
