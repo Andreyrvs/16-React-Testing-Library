@@ -1,46 +1,59 @@
 # React Testes
 
-> Eu desenvolvi os arquivos que estão em `src/tests` e `README.md`
-
-* Todos arquivos exeto os citados acima foram desenvolvidos pela [Trybe](https://www.betrybe.com/).
-
 ## Contexto
 
-Este projeto testa uma aplicaçåo de pokedex
+> Eu desenvolvi os arquivos que estão em `src/tests` e `README.md`
+>
+> Todos os arquivos, exceto os citados acima, foram desenvolvidos pela [Trybe](https://www.betrybe.com/).
+
+Este projeto testa uma aplicação de pokedex feita em `React`.
 
 ## Técnologias usadas
 
 Front-end:
 > Desenvolvido usando: React Testing Library
 
+## Habilidades
+
+Adquiri essas habilidades ao desenvolver esse projeto:
+
+- Utilizar os seletores (queries) da React-Testing-Library em testes automatizados.
+
+- Simular eventos com a React-Testing-Library em testes automatizados.
+
+- Testar fluxos lógicos assíncronos com a React-Testing-Library.
+
+- Escrever testes que permitam a refatoração da estrutura dos componentes da aplicação sem necessidade de serem alterados.
+
+- Criar mocks de APIs utilizando fetch.
+
+- Testar inputs.
+
 ## Instalando Dependências
 
-* clone o repositório:
+- Clone o projeto:
 
   ```bash
-    git clone git@github.com:Andreyrvs/react-testing-library.git
+  git clone git@github.com:Andreyrvs/16-React-Testing-Library.git
   ```
 
-> Frontend
+  > Front-end
 
-```bash
-npm install
-```
+  ```bash
+  cd src/
+  npm install
+  ```
 
 ## Executando Testes
 
-* Para rodar todos os testes:
+- Para rodar todos os testes:
 
   ```bash
-    npm test
+  npm test
   ```
 
-* Para rodar todos os testes de linter:
+- Para rodar um teste individualmente vá em `src/tests` e utilize o nome do arquivo ex:
 
   ```bash
-    npm run lint
-  ```
-
-  ```bash
-    npm run lint:styles
+  npm test About.test.js
   ```
