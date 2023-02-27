@@ -2,11 +2,12 @@
 
 ## Contexto
 
+Este projeto testa uma aplicação de pokedex feita em `React`.
+
 > Eu desenvolvi os arquivos que estão em `src/tests` e `README.md`
 >
 > Todos os arquivos, exceto os citados acima, foram desenvolvidos pela [Trybe](https://www.betrybe.com/).
 
-Este projeto testa uma aplicação de pokedex feita em `React`.
 
 ## Técnologias usadas
 
