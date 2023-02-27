@@ -41,7 +41,7 @@ Adquiri essas habilidades ao desenvolver esse projeto:
   > Front-end
 
   ```bash
-  cd src/
+  cd 16-React-Testing-Library
   npm install
   ```
 
